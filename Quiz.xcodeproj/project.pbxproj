@@ -13,10 +13,12 @@
 		3D65316A24F3086000ECC3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D65316824F3086000ECC3DD /* Main.storyboard */; };
 		3D65316C24F3086200ECC3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D65316B24F3086200ECC3DD /* Assets.xcassets */; };
 		3D65316F24F3086200ECC3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D65316D24F3086200ECC3DD /* LaunchScreen.storyboard */; };
+		3D65317A24F3099800ECC3DD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65317924F3099800ECC3DD /* Question.swift */; };
+		3D65317C24F309CF00ECC3DD /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65317B24F309CF00ECC3DD /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D65315F24F3086000ECC3DD /* Quzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D65315F24F3086000ECC3DD /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D65316224F3086000ECC3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D65316424F3086000ECC3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D65316624F3086000ECC3DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3D65316B24F3086200ECC3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D65316E24F3086200ECC3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D65317024F3086200ECC3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D65317924F3099800ECC3DD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3D65317B24F309CF00ECC3DD /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		3D65315624F3086000ECC3DD = {
 			isa = PBXGroup;
 			children = (
-				3D65316124F3086000ECC3DD /* Quzi */,
+				3D65316124F3086000ECC3DD /* Quiz */,
 				3D65316024F3086000ECC3DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,57 @@
 		3D65316024F3086000ECC3DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D65315F24F3086000ECC3DD /* Quzi.app */,
+				3D65315F24F3086000ECC3DD /* Quiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D65316124F3086000ECC3DD /* Quzi */ = {
+		3D65316124F3086000ECC3DD /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
 				3D65316224F3086000ECC3DD /* AppDelegate.swift */,
 				3D65316424F3086000ECC3DD /* SceneDelegate.swift */,
-				3D65316624F3086000ECC3DD /* ViewController.swift */,
-				3D65316824F3086000ECC3DD /* Main.storyboard */,
+				3D65317624F3092300ECC3DD /* Model */,
+				3D65317724F3092900ECC3DD /* View */,
+				3D65317824F3094200ECC3DD /* Controller */,
 				3D65316B24F3086200ECC3DD /* Assets.xcassets */,
 				3D65316D24F3086200ECC3DD /* LaunchScreen.storyboard */,
 				3D65317024F3086200ECC3DD /* Info.plist */,
 			);
-			path = Quzi;
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		3D65317624F3092300ECC3DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D65317924F3099800ECC3DD /* Question.swift */,
+				3D65317B24F309CF00ECC3DD /* QuizManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D65317724F3092900ECC3DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D65316824F3086000ECC3DD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D65317824F3094200ECC3DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D65316624F3086000ECC3DD /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D65315E24F3086000ECC3DD /* Quzi */ = {
+		3D65315E24F3086000ECC3DD /* Quiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D65317324F3086200ECC3DD /* Build configuration list for PBXNativeTarget "Quzi" */;
+			buildConfigurationList = 3D65317324F3086200ECC3DD /* Build configuration list for PBXNativeTarget "Quiz" */;
 			buildPhases = (
 				3D65315B24F3086000ECC3DD /* Sources */,
 				3D65315C24F3086000ECC3DD /* Frameworks */,
@@ -82,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = Quzi;
+			name = Quiz;
 			productName = Quzi;
-			productReference = 3D65315F24F3086000ECC3DD /* Quzi.app */;
+			productReference = 3D65315F24F3086000ECC3DD /* Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D65315A24F3086000ECC3DD /* Build configuration list for PBXProject "Quzi" */;
+			buildConfigurationList = 3D65315A24F3086000ECC3DD /* Build configuration list for PBXProject "Quiz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D65315E24F3086000ECC3DD /* Quzi */,
+				3D65315E24F3086000ECC3DD /* Quiz */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D65316724F3086000ECC3DD /* ViewController.swift in Sources */,
+				3D65317A24F3099800ECC3DD /* Question.swift in Sources */,
+				3D65317C24F309CF00ECC3DD /* QuizManager.swift in Sources */,
 				3D65316324F3086000ECC3DD /* AppDelegate.swift in Sources */,
 				3D65316524F3086000ECC3DD /* SceneDelegate.swift in Sources */,
 			);
@@ -286,12 +318,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55SSX5F8YA;
-				INFOPLIST_FILE = Quzi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Quiz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anshulgupta.Quzi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulgupta.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +336,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55SSX5F8YA;
-				INFOPLIST_FILE = Quzi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Quiz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anshulgupta.Quzi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulgupta.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D65315A24F3086000ECC3DD /* Build configuration list for PBXProject "Quzi" */ = {
+		3D65315A24F3086000ECC3DD /* Build configuration list for PBXProject "Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D65317124F3086200ECC3DD /* Debug */,
@@ -328,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D65317324F3086200ECC3DD /* Build configuration list for PBXNativeTarget "Quzi" */ = {
+		3D65317324F3086200ECC3DD /* Build configuration list for PBXNativeTarget "Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D65317424F3086200ECC3DD /* Debug */,

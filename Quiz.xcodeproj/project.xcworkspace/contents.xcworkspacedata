@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Quzi.xcodeproj">
+      location = "self:/Users/Anshul/Documents/GitHub/Quzi/Quiz.xcodeproj">
    </FileRef>
 </Workspace>
