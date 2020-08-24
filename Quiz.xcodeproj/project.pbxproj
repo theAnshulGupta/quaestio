@@ -14,7 +14,7 @@
 		3D65316F24F3086200ECC3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D65316D24F3086200ECC3DD /* LaunchScreen.storyboard */; };
 		3D65317A24F3099800ECC3DD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65317924F3099800ECC3DD /* Question.swift */; };
 		3D65317C24F309CF00ECC3DD /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65317B24F309CF00ECC3DD /* QuizManager.swift */; };
-		3D65318224F326F500ECC3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D65318024F326F500ECC3DD /* Main.storyboard */; };
+		3DD3ACE524F4825000C395F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3ACE424F4825000C395F9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		3D65317024F3086200ECC3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D65317924F3099800ECC3DD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3D65317B24F309CF00ECC3DD /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
-		3D65318124F326F500ECC3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Quizzler-MultipleChoice-iOS13-Completed/Quizzler-iOS13/View/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		3DD3ACE424F4825000C395F9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				3D65316224F3086000ECC3DD /* AppDelegate.swift */,
 				3D65316424F3086000ECC3DD /* SceneDelegate.swift */,
 				3D65317624F3092300ECC3DD /* Model */,
-				3D65317724F3092900ECC3DD /* View */,
+				3DD3ACE124F47D1A00C395F9 /* View */,
 				3D65317824F3094200ECC3DD /* Controller */,
 				3D65316D24F3086200ECC3DD /* LaunchScreen.storyboard */,
 				3D65316B24F3086200ECC3DD /* Assets.xcassets */,
@@ -81,20 +81,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3D65317724F3092900ECC3DD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3D65318024F326F500ECC3DD /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		3D65317824F3094200ECC3DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3D65316624F3086000ECC3DD /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3DD3ACE124F47D1A00C395F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3ACE424F4825000C395F9 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD3ACE524F4825000C395F9 /* Main.storyboard in Resources */,
 				3D65316F24F3086200ECC3DD /* LaunchScreen.storyboard in Resources */,
 				3D65316C24F3086200ECC3DD /* Assets.xcassets in Resources */,
-				3D65318224F326F500ECC3DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,14 +185,6 @@
 				3D65316E24F3086200ECC3DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3D65318024F326F500ECC3DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D65318124F326F500ECC3DD /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
